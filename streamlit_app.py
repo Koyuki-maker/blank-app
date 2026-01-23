@@ -15,8 +15,8 @@ task = st.text_input("新しいタスクを入力")
 if st.button("追加"):
     if task:
         supabase.table("todos").insert({
-            "task": task,
-            "done": False
+            "title": task,
+            "is_done": False
         }).execute()
         st.success("追加しました！")
         st.rerun()
@@ -29,6 +29,7 @@ rows = supabase.table("todos").select("*").order(
 ).execute()
 
 for row in rows.data:
-    st.write("✅" if row["done"] else "⬜", row["task"])
+    st.write("✅" if row["is_done"] else "⬜", row["title"])
+
 
 
