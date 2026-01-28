@@ -1,19 +1,47 @@
-# 🎈 Blank app template
+# 🕵️ 推理スタイル診断アプリ
 
-A simple Streamlit app template for you to modify!
+このアプリは、いくつかの質問に答えることで、利用者の「推理スタイル」を診断する Web アプリです。  
+質問への回答結果から、論理型・直感型・協調型などのタイプに分類し、診断結果を表示します。
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+Streamlit を用いて開発し、診断結果は Supabase のデータベースに保存されるため、アプリを再起動しても過去の診断履歴が保持されます。
 
-### How to run it on your own machine
+---
 
-1. Install the requirements
+## 🔍 主な機能
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+- 5つの質問にスライダー形式で回答
+- 回答内容に応じた推理スタイルの診断
+- 診断結果の可視化（棒グラフ表示）
+- Supabase を利用した診断結果の永続保存
+- 過去の診断履歴（最新10件）の表示
 
-2. Run the app
+---
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## 🚀 アプリのURL
+
+以下のURLからアプリを試すことができます。
+
+👉 **https://legendary-xylophone-wr4q5gqxgw5vcgg99-8503.app.github.dev/** 
+
+---
+
+## 🛠 使用技術
+
+- Python
+- Streamlit
+- Supabase（PostgreSQL）
+- pandas
+
+---
+
+## 📌 補足
+
+Supabase の認証情報（URL・API Key）は、`.streamlit/secrets.toml` に記述し、ソースコード上には直接含めていません。  
+学習目的のため、Supabase の Row Level Security（RLS）は無効化しています。
+
+---
+
+## ✨ 開発目的
+
+本アプリは、Streamlit を用いた Web アプリ開発と、外部データベース（Supabase）を利用したデータの永続化を学ぶことを目的として制作しました。
+
