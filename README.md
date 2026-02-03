@@ -21,7 +21,7 @@ Streamlit を用いて開発し、診断結果は Supabase のデータベース
 
 以下のURLからアプリを試すことができます。
 
-👉 **https://legendary-xylophone-wr4q5gqxgw5vcgg99-8501.app.github.dev/** 
+👉 **https://blank-app-pk6tg55xst7.streamlit.app/** 
 
 ---
 
